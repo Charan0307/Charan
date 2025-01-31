@@ -2,7 +2,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -10,7 +10,7 @@ html, body {
 /* Flex container for the body */
 body {
     flex: 1;
-    background-color: #f5f5f5; /* Light background color for the body */
+    background-color: #fafafa; /* Light background color for the body */
     color: #333; /* Default text color */
     padding: 20px;
     display: flex;
@@ -19,11 +19,12 @@ body {
 
 /* Header styles */
 header {
-    background-color: #4CAF50; /* Green background */
+    background-color: #ff6f61; /* Coral red background */
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+    border-radius: 5px;
 }
 
 /* Navigation Menu */
@@ -35,12 +36,13 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #4CAF50;
+    color: #ff6f61;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #d32f2f; /* Dark red on hover */
+    color: #3b9e9f; /* Teal on hover */
 }
 
 /* Main content */
@@ -52,43 +54,60 @@ main {
 
 /* About, Projects, and Contact page styles */
 .about-page {
-    background-color: #e0f7fa; /* Light cyan for About page */
+    background-color: #ffebcd; /* Blanched Almond for About page */
 }
 
 .projects-page {
-    background-color: #c5cae9; /* Light blue for Projects page */
+    background-color: #b3e5fc; /* Light Blue for Projects page */
 }
 
 .contact-page {
-    background-color: #ffcdd2; /* Light red for Contact page */
+    background-color: #d1c4e9; /* Lavender for Contact page */
 }
 
 /* Footer styles */
 footer {
-    background-color: #333; /* Dark background for footer */
+    background-color: #3b9e9f; /* Teal background for footer */
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 0.9em;
+    padding: 15px;
+    font-size: 1em;
     width: 100%;  /* Ensures it takes the full width */
+    position: relative;
+    bottom: 0;
 }
 
 /* Page-specific styles for the content */
 h1 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: #333;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2em;
-    color: #555;
+    font-size: 2.2em;
+    color: #666;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #444;
+    color: #555;
     margin-bottom: 20px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+    header {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 10px;
+    }
 }
