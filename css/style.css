@@ -10,13 +10,14 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center; /* Ensure text is centered */
 }
 
+/* Styling the header */
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-    text-align: center;
 }
 
 header nav ul {
@@ -38,10 +39,14 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-h1, h2 {
+/* Styling h1 */
+h1 {
     color: #333;
+    text-align: center; /* Center h1 */
+    margin-top: 50px; /* Add top margin for space */
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: white;
@@ -49,3 +54,5 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* Add more page-specific styles if needed */
