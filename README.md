@@ -1,1 +1,1 @@
-Edhe ra ne Portfolio, CHARAN ga
+Edhe ra ne Portfolio
