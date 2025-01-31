@@ -13,6 +13,8 @@ body {
     background-color: #f5f5f5; /* Light background color for the body */
     color: #333; /* Default text color */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header styles */
@@ -45,6 +47,7 @@ nav a:hover {
 main {
     margin-top: 30px;
     text-align: center;
+    flex: 1;  /* This ensures the main content takes up all available space */
 }
 
 /* About, Projects, and Contact page styles */
@@ -62,12 +65,12 @@ main {
 
 /* Footer styles */
 footer {
-    margin-top: auto;  /* Pushes the footer to the bottom */
     background-color: #333; /* Dark background for footer */
     color: white;
     text-align: center;
     padding: 10px;
     font-size: 0.9em;
+    width: 100%;  /* Ensures it takes the full width */
 }
 
 /* Page-specific styles for the content */
