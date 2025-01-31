@@ -1,76 +1,91 @@
-/* Common Reset and Basic Styling */
-* {
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Styling the Header */
+/* Flex container for the body */
+body {
+    flex: 1;
+    background-color: #f5f5f5; /* Light background color for the body */
+    color: #333; /* Default text color */
+    padding: 20px;
+}
+
+/* Header styles */
 header {
-    background-color: #333;
+    background-color: #4CAF50; /* Green background */
     color: white;
-    padding: 10px 0;
-}
-
-header nav ul {
-    list-style-type: none;
-    margin: 10px 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
+    padding: 15px;
     text-align: center;
-    padding: 10px 0;
+    font-size: 2em;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
     margin-top: 20px;
 }
 
-/* Styling the Home Page */
-body.home-page {
-    background-color: #f4f4f4;
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #d32f2f; /* Dark red on hover */
+}
+
+/* Main content */
+main {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* About, Projects, and Contact page styles */
+.about-page {
+    background-color: #e0f7fa; /* Light cyan for About page */
+}
+
+.projects-page {
+    background-color: #c5cae9; /* Light blue for Projects page */
+}
+
+.contact-page {
+    background-color: #ffcdd2; /* Light red for Contact page */
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;  /* Pushes the footer to the bottom */
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Page-specific styles for the content */
 h1 {
+    font-size: 2.5em;
     color: #333;
+    margin-bottom: 20px;
 }
 
-/* Styling the About Page */
-body.about-page {
-    background-color: #e0f7fa; /* Light cyan */
+h2 {
+    font-size: 2em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
-/* Styling the Projects Page */
-body.projects-page {
-    background-color: #c5cae9; /* Light blue */
-}
-
-/* Styling the Contact Page */
-body.contact-page {
-    background-color: #ffcdd2; /* Light red */
-}
-
-h1 {
-    color: #333;
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
 }
